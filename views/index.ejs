@@ -1,75 +1,72 @@
-
 <%- include('partials/header') %>
-    <div class="relative w-full h-[85vh] overflow-hidden">
+  <div class="relative w-full h-[85vh] overflow-hidden">
 
-        <button onclick="moveSlide(-1)"
-            class="absolute left-6 top-1/2 -translate-y-1/2 z-40 w-11 h-11 bg-gray-200/80 hover:bg-gray-300 rounded-full flex items-center justify-center text-gray-600 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-            </svg>
-        </button>
-        <button onclick="moveSlide(1)"
-            class="absolute right-6 top-1/2 -translate-y-1/2 z-40 w-11 h-11 bg-gray-200/80 hover:bg-gray-300 rounded-full flex items-center justify-center text-gray-600 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-            </svg>
-        </button>
+    <button onclick="moveSlide(-1)"
+      class="absolute left-6 top-1/2 -translate-y-1/2 z-40 w-11 h-11 bg-gray-200/80 hover:bg-gray-300 rounded-full flex items-center justify-center text-gray-600 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+        class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </button>
+    <button onclick="moveSlide(1)"
+      class="absolute right-6 top-1/2 -translate-y-1/2 z-40 w-11 h-11 bg-gray-200/80 hover:bg-gray-300 rounded-full flex items-center justify-center text-gray-600 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+        class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </button>
 
-        <div id="carousel" class="carousel-container flex h-full">
-            <div class="min-w-full h-full flex flex-col items-center justify-center relative bg-no-repeat bg-center"
-                style="background-image: url('/images/slider_03.svg'); background-size: 200px;">
+    <div id="carousel" class="carousel-container flex h-full">
+      <div class="min-w-full h-full flex flex-col items-center justify-center relative bg-no-repeat bg-center"
+        style="background-image: url('/images/slider_03.svg'); background-size: 200px;">
 
-                <h2 class="relative z-10 hero-text 
+        <h2 class="relative z-10 hero-text 
            text-2xl md:text-[80px] 
            leading-tight md:leading-[1.1] 
            font-medium text-center 
-           max-w-6xl px-4 select-none"
-    style="font-family: sans-serif;">
-    Extensive Network Serving Government Sector.
-</h2>
-            </div>
+           max-w-6xl px-4 select-none" style="font-family: sans-serif;">
+          Extensive Network Serving Government Sector.
+        </h2>
+      </div>
 
-            <div class="min-w-full h-full flex items-center justify-center relative bg-no-repeat bg-center"
-                style="background-image: url('/images/slider_03.svg'); background-size: 200px; filter: saturate(1.5);">
-               <h2 class="relative z-10 hero-text 
+      <div class="min-w-full h-full flex items-center justify-center relative bg-no-repeat bg-center"
+        style="background-image: url('/images/slider_03.svg'); background-size: 200px; filter: saturate(1.5);">
+        <h2 class="relative z-10 hero-text 
            text-2xl md:text-[80px] 
            leading-tight md:leading-[1.1] 
            font-medium text-center 
-           max-w-6xl px-4 select-none"
-    style="font-family: sans-serif;">
- Innovation in Irrigation Management.
-</h2>
-            </div>
-        </div>
-
-        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex space-x-3 z-40">
-            <button onclick="goToSlide(0)" class="dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all"></button>
-            <button onclick="goToSlide(1)" class="dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all"></button>
-            <button class="dot w-2.5 h-2.5 rounded-full bg-[#1E3A8A] transition-all"></button>
-            <button class="dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all"></button>
-            <button class="dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all"></button>
-        </div>
+           max-w-6xl px-4 select-none" style="font-family: sans-serif;">
+          Innovation in Irrigation Management.
+        </h2>
+      </div>
     </div>
-   <section class="relative min-h-[10vh] md:min-h-[70vh] flex items-center px-6 md:px-20 overflow-hidden">
+
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex space-x-3 z-40">
+      <button onclick="goToSlide(0)" class="dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all"></button>
+      <button onclick="goToSlide(1)" class="dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all"></button>
+      <button class="dot w-2.5 h-2.5 rounded-full bg-[#1E3A8A] transition-all"></button>
+      <button class="dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all"></button>
+      <button class="dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all"></button>
+    </div>
+  </div>
+  <section class="relative min-h-[10vh] md:min-h-[70vh] flex items-center px-6 md:px-20 overflow-hidden">
 
     <div class="absolute inset-0 z-0 flex items-center justify-end pointer-events-none">
-        <img src="/images/mapCircle.png" alt="Map Background"
-            class="h-[80px] md:h-[400px] w-auto object-contain translate-x-1/4 md:translate-x-0">
+      <img src="/images/mapCircle.png" alt="Map Background"
+        class="h-[80px] md:h-[400px] w-auto object-contain translate-x-1/4 md:translate-x-0">
     </div>
 
     <div class="relative z-10 w-full max-w-4xl">
-        <h1 class="text-xl md:text-5xl text-black leading-tight font-normal tracking-tight">
-            Pipes For A Brighter Future, For A Better
-            <span class="font-semibold text-[#1E3A8A]">INDIA.</span>
-        </h1>
+      <h1 class="text-xl md:text-5xl text-black leading-tight font-normal tracking-tight">
+        Pipes For A Brighter Future, For A Better
+        <span class="font-semibold text-[#1E3A8A]">INDIA.</span>
+      </h1>
     </div>
 
-</section>
+  </section>
 
-<!-- 
-    <section class="bg-transparent py-6 md:py-20 px-2  md:px-2">
+
+  <!-- <section class="bg-transparent py-6 md:py-20 px-2  md:px-2">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
             <div class="flex flex-col items-center justify-center space-y-4">
@@ -107,307 +104,377 @@
             </div>
 
         </div>
-    </section> -->
+    </section>  -->
 
 
   <div class="flex flex-col items-center justify-center mt-10">
     <div class="flex font-bold uppercase tracking-wider">
-        EXPLORE OUR PRODUCT RANGE
+      EXPLORE OUR PRODUCT RANGE
     </div>
-    
+
     <h2 class="text-2xl md:text-3xl lg:text-5xl mb-20 mt-10 text-jacksonsPurple">
-        What We Produce
+      What We Produce
     </h2>
 
-  <div class="w-full px-6 md:px-10 relative flex justify-center">
-  <div class="flex lg:justify-center overflow-x-auto gap-6 pb-8 snap-x scrollbar-hide scroll-smooth w-full">
-    
-    <div class="flex-none w-64 md:w-72 snap-center group">
-      <div class="flex flex-col items-center border border-jacksonsPurple p-6 rounded-3xl transition-all hover:bg-jacksonsPurple  relative">
-        <h4 class="text-lg md:text-xl font-semibold mb-4 text-center">HDPE PIPES</h4>
-        <div class="mb-6 h-40 flex items-center justify-center">
-          <img src="/images/product_01.png" alt="HDPE" class="group-hover:hidden max-h-full w-auto">
-          <img src="/images/product_01hover.png" alt="HDPE Hover" class="hidden group-hover:block max-h-full w-auto">
+    <div class="w-full px-6 md:px-10 relative flex justify-center">
+      <div class="flex lg:justify-center overflow-x-auto gap-6 pb-8 snap-x scrollbar-hide scroll-smooth w-full">
+
+        <div class="flex-none w-64 md:w-72 snap-center group">
+          <div
+            class="flex flex-col items-center border border-jacksonsPurple p-6 rounded-3xl transition-all hover:bg-jacksonsPurple  relative">
+            <h4 class="text-lg md:text-xl font-semibold mb-4 text-center">HDPE PIPES</h4>
+            <div class="mb-6 h-40 flex items-center justify-center">
+              <img src="/images/product_01.png" alt="HDPE" class="group-hover:hidden max-h-full w-auto">
+              <img src="/images/product_01hover.png" alt="HDPE Hover"
+                class="hidden group-hover:block max-h-full w-auto">
+            </div>
+            <a href="/hdpe"
+              class="text-xs py-1 px-4 border border-black group-hover:border-white rounded-md transition-colors">more</a>
+          </div>
         </div>
-        <a href="/hdpe" class="text-xs py-1 px-4 border border-black group-hover:border-white rounded-md transition-colors">more</a>
+
+        <div class="flex-none w-64 md:w-72 snap-center group">
+          <div
+            class="flex flex-col items-center border border-jacksonsPurple p-6 rounded-3xl transition-all hover:bg-jacksonsPurple relative">
+            <h4 class="text-lg md:text-xl font-semibold mb-4 text-center"> DWC PIPE</h4>
+            <div class="mb-6 h-40 flex items-center justify-center">
+              <img src="/images/product_03.png" alt="MDPE Water" class="group-hover:hidden max-h-full w-auto">
+              <img src="/images/product_03hover.png" alt="MDPE Water Hover"
+                class="hidden group-hover:block max-h-full w-auto">
+            </div>
+            <a href="/dwc-pipe"
+              class="text-xs py-1 px-4 border border-black group-hover:border-white rounded-md transition-colors">more</a>
+          </div>
+        </div>
+
+        <div class="flex-none w-64 md:w-72 snap-center group">
+          <div
+            class="flex flex-col items-center border border-jacksonsPurple p-6 rounded-3xl transition-all hover:bg-jacksonsPurple relative">
+            <h4 class="text-lg md:text-xl font-semibold mb-4 text-center">PVC PIPE</h4>
+            <div class="mb-6 h-40 flex items-center justify-center">
+              <img src="/images/product_04.png" alt="MDPE Gas" class="group-hover:hidden max-h-full w-auto">
+              <img src="/images/product_04hover.png" alt="MDPE Gas Hover"
+                class="hidden group-hover:block max-h-full w-auto">
+            </div>
+            <a href="/pvc-pipe"
+              class="text-xs py-1 px-4 border border-black group-hover:border-white rounded-md transition-colors">more</a>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class="flex-none w-64 md:w-72 snap-center group">
-      <div class="flex flex-col items-center border border-jacksonsPurple p-6 rounded-3xl transition-all hover:bg-jacksonsPurple relative">
-        <h4 class="text-lg md:text-xl font-semibold mb-4 text-center"> DWC PIPE</h4>
-        <div class="mb-6 h-40 flex items-center justify-center">
-          <img src="/images/product_03.png" alt="MDPE Water" class="group-hover:hidden max-h-full w-auto">
-          <img src="/images/product_03hover.png" alt="MDPE Water Hover" class="hidden group-hover:block max-h-full w-auto">
-        </div>
-        <a href="/mdpe" class="text-xs py-1 px-4 border border-black group-hover:border-white rounded-md transition-colors">more</a>
-      </div>
-    </div>
 
-    <div class="flex-none w-64 md:w-72 snap-center group">
-      <div class="flex flex-col items-center border border-jacksonsPurple p-6 rounded-3xl transition-all hover:bg-jacksonsPurple relative">
-        <h4 class="text-lg md:text-xl font-semibold mb-4 text-center">PVC PIPE</h4>
-        <div class="mb-6 h-40 flex items-center justify-center">
-          <img src="/images/product_04.png" alt="MDPE Gas" class="group-hover:hidden max-h-full w-auto">
-          <img src="/images/product_04hover.png" alt="MDPE Gas Hover" class="hidden group-hover:block max-h-full w-auto">
-        </div>
-        <a href="/mdpe_gas" class="text-xs py-1 px-4 border border-black group-hover:border-white rounded-md transition-colors">more</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<div class="font-sans overflow-x-hidden">
-
-  <section class="max-w-6xl mx-auto mt-10 px-6 lg:px-0">
-    <div>
-      <p class="text-xs font-bold tracking-widest text-blue-900 uppercase mb-4">
-        State of the Art Facilities
-      </p>
-
-      <h2 class="text-4xl md:text-7xl font-light text-black mb-8 leading-tight">
-        Infrastructure
-      </h2>
-
-      <div class="max-w-3xl">
-        <p class="text-lg text-gray-800 leading-relaxed mb-6">
-          Fostering a safe and <span class="font-bold">productive work environment</span> is paramount at Solanki Pipes Pipe. 
-          We prioritize employee well-being through <span class="font-bold">comprehensive training, and modern equipment</span>. 
-          Our head office, 25 km from Rajkot City. Our commitment to quality is evident through top-tier 
-          <span class="font-bold">Testing Equipment</span> and an <span class="font-bold">independent Quality Control Department</span>.
-        </p>
-
-        <a href="#" class="inline-flex items-center text-blue-800 font-medium hover:underline mb-10">
-          More <span class="ml-2 h-2 w-2 bg-blue-800 rounded-full"></span>
-        </a>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-gray-100 pt-8">
-        <div>
-          <p class="text-xl md:text-2xl text-blue-400 font-light mb-2">Massive Infrastructure</p>
-          <p class="text-3xl md:text-4xl font-bold text-blue-900">96,800 Sq. Ft</p>
+    <div class="font-sans overflow-x-hidden">
+      <div class="flex flex-col items-center justify-center mt-10 px-4 sm:px-10 lg:px-20">
+        <div class="text-center mb-10">
+          <span class="text-blue-900 font-bold tracking-widest uppercase">OUR IMPACT</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl mt-4">Projects & Events</h2>
         </div>
 
-        <div>
-          <p class="text-xl md:text-2xl text-blue-400 font-light mb-2">Production Capacity <span class="font-bold text-blue-900 ml-1">10,000</span></p>
-          <p class="text-3xl md:text-4xl font-bold text-blue-900 uppercase">MTPA</p>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full max-w-7xl mb-24">
+
+          <!-- LEFT BIG CARD -->
+          <div class="lg:col-span-2 relative group overflow-hidden rounded-2xl min-h-[500px]">
+
+            <a href="/projects" class="block h-full">
+              <img src="/images/project_1.jpg"
+                class="object-cover w-full h-[500px] transition-transform duration-500 group-hover:scale-105">
+
+
+              <div class="absolute bottom-6 left-6 right-6 flex flex-col items-start">
+                <span class="text-black text-xs font-bold py-1 px-3 bg-cyan-400 rounded-md mb-3">
+                  Project
+                </span>
+
+                <div class="text-black text-2xl font-semibold leading-tight">
+                  <p>Mega Food Park, Ludhiana</p>
+
+                  <p class="text-lg font-bold mt-2 opacity-90">
+                    Successful HDPE Pipeline Execution for STP Project – Mega Food Park, Ludhiana
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="flex flex-col gap-6">
+
+            <!-- TOP CARD -->
+            <a href="/farmers-fair" class="flex flex-col group">
+              <div class="overflow-hidden rounded-xl h-60 relative">
+                <img src="/images/IMG_0524.jpg.jpeg"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+
+                <div class="absolute inset-0 bg-black/10"></div>
+              </div>
+
+              <span
+                class="text-white text-[10px] uppercase tracking-wider py-1 px-3 bg-emerald-700 rounded-md w-fit mt-4 mb-2 font-bold">
+                Event
+              </span>
+
+              <p class="text-blue-900 font-bold text-sm leading-snug">
+                Sponsorship of Farmers’ Fair & Agricultural Exhibition – Haryana
+              </p>
+            </a>
+
+            <!-- BOTTOM CARD -->
+            <div class="flex flex-col">
+              <div class="overflow-hidden rounded-xl h-60">
+                <img src="/images/kabadi.jpeg" class="w-full h-full object-cover">
+              </div>
+
+              <span
+                class="text-white text-[10px] uppercase tracking-wider py-1 px-3 bg-blue-800 rounded-md w-fit mt-4 mb-2">
+                Community & Sponsorships
+              </span>
+
+              <p class="text-blue-900 font-medium text-sm leading-snug">
+                Solanki Pipes Proudly Sponsors JKL (Just Kabaddi League)
+              </p>
+            </div>
+
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <div class="flex flex-col items-center justify-center mt-24 px-4 sm:px-10 lg:px-20">
-    <div class="text-center mb-10">
-      <span class="text-blue-900 font-bold tracking-widest uppercase">OUR IMPACT</span>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl mt-4">Projects & Events</h2>
-    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl mb-24">
-      
-      <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-2xl">
-        <a href="#" class="block h-full">
-          <img src="/images/IMG_0524.jpg.jpeg" class="object-cover w-full h-full min-h-[300px] transition-transform duration-500 group-hover:scale-105">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent md:bg-gradient-to-b md:from-blue-900/60 md:to-transparent"></div>
-          
-          <div class="absolute bottom-6 left-6 right-6 md:top-10 md:left-10 md:bottom-auto flex flex-col items-start">
-            <span class="text-black text-xs font-bold py-1 px-3 bg-cyan-400 rounded-md mb-3">Event</span>
-            <div class="text-white text-xl md:text-2xl font-semibold leading-tight">
-              <p>Entrepreneurs Awards.</p>
-              <p class="text-sm md:text-lg font-light mt-2 opacity-90 line-clamp-2">Sachin Solanki Received Award for Best Entrepreneurs in piping industry.</p>
+      <section class="bg-[#F9F9F7] py-16 px-6 md:px-20 font-sans">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+          <div class="space-y-6">
+            <p class="text-blue-800 font-bold text-xs tracking-widest uppercase">
+              Our Collaborative Clients
+            </p>
+
+            <h2 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 font-light">
+              Our Valued Clients
+            </h2>
+
+            <p class="text-gray-700 text-lg leading-relaxed max-w-xl">
+              At Solanki Pipes, our clients are the cornerstone of our success. We take immense pride in the enduring
+              partnerships we've forged. Discover the stories of collaboration, innovation, and shared success that
+              define
+              our journey.
+            </p>
+
+            <a href="#" class="group inline-flex items-center text-blue-800 font-medium hover:underline text-lg">
+              More
+              <span class="ml-2 h-2 w-2 bg-blue-800 rounded-full transition-transform group-hover:scale-125"></span>
+            </a>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center p-12 bg-white rounded-3xl border border-gray-100 shadow-xl transition-all duration-300 hover:shadow-2xl group relative overflow-hidden">
+            <div
+              class="absolute -right-16 -top-16 w-32 h-32 bg-blue-50 rounded-full opacity-50 group-hover:scale-150 transition-transform duration-500">
+            </div>
+            <img src="images/quality7.svg" alt="Haryana PHED"
+              class="h-28 w-auto grayscale hover:grayscale-0 transition-all duration-300 transform group-hover:scale-105 z-10">
+            <p
+              class="text-sm font-semibold tracking-wider text-gray-400 mt-6 group-hover:text-blue-800 transition-colors uppercase">
+              Empanelled & Approved Client</p>
+            <span class="text-xs text-gray-400 mt-1">Public Health Engineering Department, Haryana</span>
+          </div>
+
+        </div>
+      </section>
+
+
+      <section class="bg-[#3e4095] min-h-[40vh] flex items-center px-6 md:px-20 py-16 mb-16">
+        <div class="max-w-5xl">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-light text-cyan-300 leading-tight">
+            Solanki Delivering Pipes for Diverse Industries, from Agriculture to Tele-communications, and Infrastructure
+            Development, Building a Better <span class="text-white/40">Tomorrow.</span>
+          </h1>
+        </div>
+      </section>
+
+      <section class=" max-w-6xl flex flex-col  px-4  bg-[#F9F9F7] font-sans">
+
+        <div class="mb-4">
+          <span class="text-blue-900 font-bold tracking-widest uppercase text-xs sm:text-sm">
+            Connecting the Dots
+          </span>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 w-full items-center lg:items-center">
+
+          <div class="flex flex-col lg:w-5/12 w-full order-2 lg:order-1">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 font-light mb-8 leading-tight">
+              Where We Are
+            </h2>
+
+            <div class=" space-y-6">
+              <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                At Solanki Pipes, our commitment extends beyond product excellence. We believe in <span
+                  class="font-bold">establishing strong connections and networks</span> that resonate with trust and
+                reliability.
+              </p>
+              <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                Our network expansion initiative aims to establish a robust presence in <span class="font-bold">every
+                  corner of the country</span>, facilitating <span class="font-bold">seamless connectivity and efficient
+                  product distribution</span>.
+              </p>
+
+              <a href="/location"
+                class="group inline-flex items-center mt-4 text-blue-900 font-medium hover:underline text-lg">
+                More
+                <span class="ml-2 h-2 w-2 bg-blue-900 rounded-full transition-transform group-hover:scale-125"></span>
+              </a>
             </div>
           </div>
-        </a>
-      </div>
 
-      <div class="flex flex-col">
-        <div class="overflow-hidden rounded-xl h-48">
-            <img src="/images/lift_irrigation.jpeg" class="w-full h-full object-cover">
-        </div>
-        <span class="text-white text-[10px] uppercase tracking-wider py-1 px-3 bg-blue-800 rounded-md w-fit mt-5 mb-2">Project</span>
-        <p class="text-blue-900 font-medium text-sm leading-snug line-clamp-2">
-          Ayodhya project in Uttar Pradesh 1500+km pipeline installed.
-        </p>
-      </div>
 
-      <div class="flex flex-col">
-        <div class="overflow-hidden rounded-xl h-48">
-            <img src="/images/homeProject_04.png" class="w-full h-full object-cover">
-        </div>
-        <span class="text-white text-[10px] uppercase tracking-wider py-1 px-3 bg-blue-800 rounded-md w-fit mt-5 mb-2">Project</span>
-        <p class="text-blue-900 font-medium text-sm leading-snug line-clamp-2">
-          Kerala Water Authority (KWA) to supply HDPE Pipes in JJM projects.
-        </p>
-      </div>
 
-      <div class="flex flex-col">
-        <div class="overflow-hidden rounded-xl h-48">
-            <img src="/images/homeProject_03.png" class="w-full h-full object-cover">
-        </div>
-        <span class="text-white text-[10px] uppercase tracking-wider py-1 px-3 bg-blue-800 rounded-md w-fit mt-5 mb-2">Project</span>
-        <p class="text-blue-900 font-medium text-sm leading-snug line-clamp-2">
-          Projects of PLB Duct Pipe for Rajkot, Ahmedabad, Surat Smart City Project
-        </p>
-      </div>
+          <div class="lg:w-7/12 w-full flex flex-col items-center lg:items-end order-1 lg:order-2">
+            <div class="relative max-w-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="w-full h-full"
+                style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd"
+                viewBox="6900 6900 6300 7100">
+                <defs>
+                  <style>
+                    @font-face {
+                      font-family: "Montserrat";
+                      font-variant: normal;
+                      font-style: normal;
+                      font-weight: 400;
+                      src: url(#FontID0)format(svg)
+                    }
 
-      <div class="flex flex-col">
-        <div class="overflow-hidden rounded-xl h-48">
-            <img src="/images/homeProject_05.png" class="w-full h-full object-cover">
+                    .fil6 {
+                      fill: #373435
+                    }
+
+                    .fil2 {
+                      fill: #00afef
+                    }
+
+                    .fnt0 {
+                      font-weight: 400;
+                      font-size: 177.075px;
+                      font-family: "Montserrat"
+                    }
+                  </style>
+                  <font id="FontID0" font-style="normal" font-variant="normal" font-weight="400" horiz-adv-x="717"
+                    style="fill-rule:nonzero">
+                    <fontface font-family="Montserrat">
+                      <fontfacesrc>
+                        <fontfacename name="Montserrat Regular"></fontfacename>
+                      </fontfacesrc>
+                    </fontface>
+                    <missingglyph>
+                      <path d="M0 0z"></path>
+                    </missingglyph>
+                    <glyph
+                      d="M375.992 31.994C362.674 20.01 346.177 10.828 326.5 4.491c-19.677-6.314-40.176-9.494-61.498-9.494-49.336 0-87.334 13.34-113.992 39.999-26.68 26.68-40.02 64.344-40.02 113.013v317.985H17.007v60.008h93.981v114.992h71.014V526.002h159.993v-60.008H182.003V152.01c0-31.35 7.827-55.184 23.501-71.504 15.653-16.341 38.153-24.5 67.502-24.5 14.651 0 28.837 2.334 42.488 7.003 13.674 4.646 25.502 11.317 35.507 19.988l24.99-51.004z"
+                      horiz-adv-x="406" unicode="t"></glyph>
+                    <glyph
+                      d="M367.01 530.004c65.99 0 118.483-19.165 157.48-57.496 39.02-38.33 58.519-94.182 58.519-167.508V0h-71.014v297.997c0 54.672-13.652 96.338-40.999 124.997-27.325 28.681-66.323 43-116.993 43-56.673 0-101.496-16.831-134.513-50.493-32.995-33.661-49.492-80.174-49.492-139.494V0H99.006v526.002h67.99v-97.005c19.344 31.994 46.18 56.83 80.508 74.505 34.329 17.675 74.172 26.502 119.506 26.502z"
+                      horiz-adv-x="676" unicode="n"></glyph>
+                    <glyph
+                      d="M367.01 530.004c65.99 0 118.483-19.165 157.48-57.496 39.02-38.33 58.519-94.182 58.519-167.508V0h-71.014v297.997c0 54.672-13.652 96.338-40.999 124.997-27.325 28.681-66.323 43-116.993 43-56.673 0-101.496-16.831-134.513-50.493-32.995-33.661-49.492-80.174-49.492-139.494V0H99.006V742h70.992V433.998c19.343 30.66 46.001 54.34 79.996 70.992 33.996 16.675 73.016 25.013 117.015 25.013z"
+                      horiz-adv-x="676" unicode="h"></glyph>
+                    <glyph
+                      d="M1074.99 700.002 839.003 0h-78.018L555.991 596.994 349.997 0h-76.995L36.992 700.002h75.995L315 98.005l208.996 601.997h68.99L799.005 95.004l204.994 604.998h70.991z"
+                      horiz-adv-x="1110" unicode="W"></glyph>
+                    <glyph
+                      d="M417.991-6.003c-69.324 0-131.823 15.341-187.496 46.001-55.673 30.66-99.34 73.17-131 127.51-31.66 54.317-47.49 115.148-47.49 182.493 0 67.324 15.83 128.177 47.49 182.493 31.66 54.34 75.505 96.85 131.512 127.51 55.984 30.66 118.661 46.002 187.985 46.002 52.004 0 100.007-8.672 144.007-26.014 44-17.32 81.33-42.666 111.991-75.994l-46.98-47.002c-54.672 55.34-123.685 82.998-207.017 82.998-55.317 0-105.654-12.65-150.988-37.997-45.334-25.324-80.84-59.986-106.499-103.986-25.68-44-38.508-93.337-38.508-148.01 0-54.672 12.829-104.008 38.508-148.008 25.658-44 61.165-78.663 106.5-103.986C315.34 72.66 365.675 60.01 420.992 60.01c83.999 0 153.012 27.992 207.017 83.998l46.98-47.002c-30.66-33.328-68.146-58.83-112.48-76.505C518.176 2.825 469.996-6.002 417.992-6.002z"
+                      horiz-adv-x="718" unicode="C"></glyph>
+                    <glyph
+                      d="M556.996 240.99H116.993c4.002-54.65 25.013-98.828 63.01-132.49 37.997-33.662 86-50.492 144.007-50.492 32.661 0 62.654 5.825 89.98 17.497 27.347 11.65 51.003 28.837 71.013 51.493l39.999-46.001c-23.346-27.992-52.494-49.336-87.512-63.988C402.494 2.334 364.008-5.003 322.01-5.003c-54.006 0-101.853 11.495-143.519 34.507-41.666 22.99-74.149 54.828-97.494 95.493C57.674 165.662 46 211.664 46 263.001c0 51.338 11.161 97.339 33.506 138.004 22.323 40.665 52.983 72.326 92.003 95.004 38.997 22.656 82.82 33.995 131.489 33.995 48.67 0 92.336-11.339 131-33.995 38.664-22.678 68.99-54.183 91.002-94.515 21.989-40.331 32.995-86.488 32.995-138.493l-1.001-22.011zM303 468.995c-50.67 0-93.159-16.164-127.51-48.492-34.329-32.327-53.828-74.504-58.497-126.508h373.013c-4.669 52.004-24.167 94.181-58.496 126.509-34.351 32.327-77.173 48.491-128.51 48.491z"
+                      horiz-adv-x="603" unicode="e"></glyph>
+                    <glyph
+                      d="M239.989-5.003c-42.666 0-83.487 6.16-122.485 18.499-38.998 12.34-69.502 27.836-91.513 46.512l32.016 55.985c21.989-17.32 49.67-31.483 82.998-42.489 33.328-11.005 67.99-16.497 103.986-16.497 48.002 0 83.51 7.493 106.499 22.5 23.012 14.986 34.507 36.152 34.507 63.5 0 19.32-6.337 34.484-18.988 45.49-12.673 11.005-28.681 19.343-48.002 25.012-19.343 5.647-45.001 11.161-77.017 16.497-42.667 8.005-76.995 16.164-102.986 24.502-26.014 8.315-48.18 22.5-66.501 42.488C54.16 317.006 45 344.665 45 379.994c0 44 18.343 79.997 55.006 108.011 36.663 27.992 87.667 42 152.989 42 33.995 0 68.012-4.514 102.008-13.496 33.995-9.005 61.987-20.833 83.998-35.507l-30.993-57.007c-43.334 30.015-95.004 45-155.013 45-45.335 0-79.485-8.004-102.497-23.99-22.99-16.008-34.507-36.996-34.507-63.01 0-19.987 6.515-35.996 19.5-48.002 13.006-11.984 29.17-20.833 48.513-26.502 19.32-5.647 46.001-11.495 79.996-17.498 42-7.982 75.661-15.986 101.007-23.99 25.324-8.004 47.002-21.678 64.99-40.999 18.008-19.343 26.99-46.001 26.99-79.996 0-46.001-19.165-82.509-57.495-109.5C361.16 8.494 308-5.002 239.988-5.002z"
+                      horiz-adv-x="489" unicode="s"></glyph>
+                    <glyph
+                      d="M699.002 700.002V0h-61.009L188.007 568.001V0h-74.016v700.002h61.01l451.007-568.001v568.001h72.993z"
+                      horiz-adv-x="812" unicode="N"></glyph>
+                    <glyph
+                      d="M609 64.01V0H113.991v700.002h480.001v-64.01H188.007V386.997h361.985V324.01H188.007v-260H609z"
+                      horiz-adv-x="669" unicode="E"></glyph>
+                    <glyph
+                      d="M573.004 526.002V0h-68.013v96.005c-18.653-31.994-44.333-56.83-76.994-74.505C395.336 3.824 358.005-5.003 316.006-5.003c-68.68 0-122.841 19.166-162.505 57.497-39.665 38.33-59.497 94.515-59.497 168.508v305h70.991V228.005c0-55.34 13.674-97.339 40.999-125.998 27.347-28.682 66.345-43 117.015-43 55.317 0 98.984 16.83 131 50.492 31.994 33.662 47.98 80.508 47.98 140.494v276.008h71.014z"
+                      horiz-adv-x="673" unicode="u"></glyph>
+                    <glyph
+                      d="M307.001-6.003c-52.004 0-101.83 8.338-149.499 25.013-47.669 16.653-84.51 38.664-110.501 65.989l28.993 57.007C101.34 116.66 135 96.16 177 80.508 219 64.833 262.333 57.007 307 57.007c62.654 0 109.656 11.495 141.005 34.484 31.327 23.012 47.001 52.85 47.001 89.513 0 27.992-8.515 50.336-25.502 66.99-17.008 16.675-37.841 29.503-62.498 38.508-24.68 9.005-59.008 18.832-103.008 29.504-52.672 13.318-94.67 26.169-125.998 38.486-31.327 12.34-58.163 31.172-80.508 56.518-22.322 25.324-33.484 59.653-33.484 102.986 0 35.33 9.316 67.501 27.992 96.494 18.654 29.015 47.336 52.182 86 69.502 38.664 17.342 86.666 26.013 144.007 26.013 39.998 0 79.152-5.513 117.482-16.497 38.353-11.005 71.503-26.169 99.517-45.512l-25.012-58.986c-29.326 19.321-60.654 33.818-94.004 43.49-33.328 9.67-65.99 14.495-97.983 14.495-61.343 0-107.5-11.828-138.515-35.484-30.994-23.68-46.49-54.184-46.49-91.514 0-27.992 8.492-50.492 25.501-67.501 16.987-16.986 38.33-29.993 63.988-38.998 25.68-9.004 60.165-18.831 103.497-29.504 51.338-12.65 92.848-25.168 124.508-37.485 31.661-12.34 58.497-31.016 80.508-56.007C556.995 261.49 568 227.672 568 185.006c0-35.33-9.494-67.501-28.504-96.516-18.987-28.992-48.158-51.982-87.489-68.99C412.676 2.49 364.34-6.004 307-6.004z"
+                      horiz-adv-x="615" unicode="S"></glyph>
+                    <glyph
+                      d="M282.989 530.004c68.68 0 121.351-17.164 158.014-51.515 36.663-34.329 55.006-85.155 55.006-152.478V0h-68.013v81.997c-15.985-27.325-39.486-48.669-70.502-63.988C326.5 2.668 289.659-5.003 246.993-5.003c-58.653 0-105.32 14.007-139.983 42-34.685 28.014-52.005 65.01-52.005 111.011 0 44.668 16.164 80.664 48.492 107.99 32.327 27.325 83.843 40.998 154.5 40.998h166.997v31.994c0 45.335-12.651 79.841-37.997 103.52-25.325 23.657-62.321 35.485-110.99 35.485-33.35 0-65.345-5.492-96.005-16.497-30.66-11.006-57.007-26.17-78.996-45.49L68.99 458.99c26.68 22.679 58.674 40.177 96.004 52.516 37.33 12.318 76.662 18.498 117.994 18.498zm-24.99-479c39.998 0 74.326 9.16 103.007 27.503 28.66 18.32 50.004 44.823 63.989 79.485v86H260c-90.002 0-135.002-31.328-135.002-93.982 0-30.682 11.672-54.85 34.995-72.504C183.34 59.831 216 51.004 258 51.004z"
+                      horiz-adv-x="589" unicode="a"></glyph>
+                    <glyph
+                      d="M166.996 422.994c16.675 35.33 41.51 62.01 74.505 79.996 32.994 18.01 73.837 27.014 122.507 27.014v-69.013l-17.009 1c-55.34 0-98.673-16.986-130-50.981-31.327-34.017-47.002-81.686-47.002-143.006V0H99.005v526.002h67.99V422.994z"
+                      horiz-adv-x="401" unicode="r"></glyph>
+                    <glyph
+                      d="M314.005-5.003c-50.67 0-96.338 11.495-137.003 34.507-40.665 22.99-72.66 54.828-96.005 95.493-23.323 40.665-34.995 86.667-34.995 138.004 0 51.338 11.672 97.339 34.995 138.004 23.346 40.665 55.34 72.326 96.005 95.004 40.665 22.656 86.333 33.996 137.003 33.996 50.67 0 96.338-11.34 137.003-33.996 40.665-22.678 72.481-54.339 95.493-95.004 22.99-40.665 34.507-86.666 34.507-138.004 0-51.337-11.517-97.338-34.507-138.004-23.011-40.665-54.828-72.503-95.493-95.493C410.343 6.492 364.675-5.003 314.005-5.003zm0 63.01c37.33 0 70.836 8.494 100.496 25.502 29.66 16.987 52.827 41.155 69.502 72.482 16.653 31.35 24.99 67.012 24.99 107.01 0 39.998-8.337 75.66-24.99 106.988-16.675 31.35-39.842 55.517-69.502 72.504-29.66 17.008-63.166 25.501-100.496 25.501s-70.836-8.493-100.496-25.501c-29.682-16.987-53.005-41.155-70.014-72.504-16.986-31.327-25.501-66.99-25.501-106.988 0-39.998 8.515-75.661 25.501-107.01 17.01-31.327 40.332-55.495 70.014-72.482 29.66-17.008 63.166-25.502 100.496-25.502z"
+                      horiz-adv-x="627" unicode="o"></glyph>
+                  </font>
+                </defs>
+                <g id="Layer_x0020_1">
+                  <g id="_2129450493840">
+                    <path
+                      d="M8553 7032c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm148-97c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-305 175c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-453 96c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm305 0c39 0 71 32 71 71 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-71 70-71zm306 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-71 71-71zm-463 78c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm-1063 97c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 71-71 71-38 0-70-32-70-71 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm-768 78c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm-1063 97c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 71-71 71-38 0-70-32-70-71 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm-768 78c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-758 97c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-71-31-71-70 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm-463 78c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-453 97c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-71-31-71-70 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm-768 78c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-453 97c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-71-31-71-70 0-38 32-70 71-70zm-463 78c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-758 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-768 78c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-758 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-1073 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1368 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-1378 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1368 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm3356 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm-4734 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm3051 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-5334 97c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm2745 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm-5039 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm610 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm3051 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-5334 97c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm1525 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm915 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm-5039 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm2441 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-5029 97c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm2746 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm915 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm-5039 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm2746 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-5029 97c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm2136 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm-4733 78c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm2135 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm610 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-5334 97c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm1831 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm610 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm-5344 78c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm2135 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm915 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-5334 97c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm2136 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm915 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm-5344 78c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm610 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm2135 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm1220 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-5029 96c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm610 0c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm2136 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm915 0c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm305 0c39 0 71 32 71 71 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-71 70-71zm-5344 78c39 0 71 32 71 71 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-71 70-71zm306 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-71 71-71zm305 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm305 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm305 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm2440 0c39 0 71 32 71 71 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-71 70-71zm306 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-71 71-71zm305 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm610 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm-5029 97c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm2136 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm-3818 78c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm2441 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm915 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm-5029 97c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm2136 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm-3818 78c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm610 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm2440 0c39 0 71 32 71 70 0 39-32 71-71 71-38 0-70-32-70-71 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm-3504 97c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm2136 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-3208 78c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm2135 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm-2893 97c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm1831 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-2598 78c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm2135 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm-2893 97c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm1831 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-2598 78c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm1830 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm-2893 97c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm1831 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-2598 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm1830 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm-2588 97c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm-462 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1063 97c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm-767 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-453 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm-767 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-453 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm-462 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm610-4024c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-305 1225c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm3966 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-3966 875c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm-148 96c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm2588 253c39 0 71 32 71 70 0 39-32 71-71 71-38 0-70-32-70-71 0-38 32-70 70-70zm158 447c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-2903 603c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm767-4276c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm1375 2177c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm-1368 97c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm610 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1378 78c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm-1062 97c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-1378 78c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm-1368 97c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-1378 78c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm-1673 97c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-1378 78c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm-1673 96c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm305 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm-1683 78c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm305 0c39 0 71 32 71 71 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-71 70-71zm306 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-71 71-71zm305 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm-1673 97c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm305 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm-1378 78c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 71-71 71-38 0-70-32-70-71 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm-1673 97c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm-1683 78c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 71-71 71-38 0-70-32-70-71 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm-1673 97c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-1378 78c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm611 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm-1368 97c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-1378 78c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-71-31-71-70 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm-1368 97c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-1378 78c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-71-31-71-70 0-38 32-70 71-70zm-1063 97c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-463 78c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm463-1827c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm453 78c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm0 1224c38 0 70 32 70 70 0 39-32 70-70 70-39 0-71-31-71-70 0-38 32-70 71-70zm312-1196c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-161 1643c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm0 175c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1378 253c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm0 175c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-148 97c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm916-700c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm-158 78c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm-1062 97c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-768 78c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm-1062 97c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-768 78c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm-757 97c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-463 78c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-452 97c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-463 78c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-147 97c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm147-797c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1220 700c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-758 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm-462 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1063 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-1073 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm610 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1063 97c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm-1073 78c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-1063 97c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm-1073 78c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-1063 97c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm-463 78c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-758 97c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm-768 77c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm-758 97c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm305 0c39 0 71 32 71 71 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-71 70-71zm306 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-71 71-71zm-463 78c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm-453 97c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 71-71 71-38 0-70-32-70-71 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm-463 78c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm-453 97c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-71-31-71-70 0-38 32-70 71-70zm-463 78c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-148 97c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm-157-1321c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-305 525c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm610 699c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-305 175c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-305-428c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70z"
+                      style="fill:#ccc"></path>
+                    <circle cx="11691" cy="13807" r="91" style="fill:#0bb7c4"></circle>
+                    <circle cx="11691" cy="12443" r="91" class="fil2"></circle>
+                    <circle cx="11691" cy="13125" r="91" style="fill:#90e0ef"></circle>
+                    <circle cx="11691" cy="13466" r="91" style="fill:#3e4095"></circle>
+                    <circle cx="11691" cy="12783" r="91" style="fill:#2a569f"></circle><text x="11988" y="12504"
+                      class="fil6 fnt0">West</text><text x="11974" y="12849" class="fil6 fnt0">North</text><text
+                      x="11985" y="13187" class="fil6 fnt0">Center</text><text x="11986" y="13532"
+                      class="fil6 fnt0">South</text><text x="11974" y="13869" class="fil6 fnt0">East</text>
+                    <circle cx="12057" cy="9629" r="71" class="fil2"></circle>
+                    <circle cx="7481" cy="10154" r="71" class="fil2"></circle>
+                    <circle cx="8250" cy="12700" r="71" class="fil2"></circle>
+                  </g>
+                </g>
+              </svg>
+
+              <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 self-end text-sm text-gray-600 lg:mr-10">
+                <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-cyan-400"></span> West</div>
+                <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-blue-900"></span> North</div>
+                <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-blue-300"></span> Center</div>
+                <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-indigo-600"></span> South
+                </div>
+                <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-teal-500"></span> East</div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <span class="text-white text-[10px] uppercase tracking-wider py-1 px-3 bg-blue-800 rounded-md w-fit mt-5 mb-2">Project</span>
-        <p class="text-blue-900 font-medium text-sm leading-snug line-clamp-2">
-          Gail India Ltd. to supply more than 100km plus telecom duct pipe across India.
-        </p>
-      </div>
+      </section>
+
+
+
 
     </div>
-  </div>
-</div>
 
-
-<section class="bg-[#F9F9F7] py-16 px-6 md:px-20 font-sans">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-    
-    <div class="space-y-6">
-      <p class="text-blue-800 font-bold text-xs tracking-widest uppercase">
-        Our Collaborative Clients
-      </p>
-      
-      <h2 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 font-light">
-        Our Valued Clients
-      </h2>
-      
-      <p class="text-gray-700 text-lg leading-relaxed max-w-xl">
-        At Solanki Pipes Pipe, our clients are the cornerstone of our success. We take immense pride in the enduring partnerships we've forged. Discover the stories of collaboration, innovation, and shared success that define our journey.
-      </p>
-      
-      <a href="#" class="group inline-flex items-center text-blue-800 font-medium hover:underline text-lg">
-        More 
-        <span class="ml-2 h-2 w-2 bg-blue-800 rounded-full transition-transform group-hover:scale-125"></span>
-      </a>
-    </div>
-
-    <div class="grid grid-cols-3 gap-0 relative">
-      <div class="absolute left-1/3 top-0 bottom-0 w-[1px] bg-gray-200"></div>
-      <div class="absolute left-2/3 top-0 bottom-0 w-[1px] bg-gray-200"></div>
-      <div class="absolute top-1/2 left-0 right-0 h-[1px] bg-gray-200"></div>
-
-      <div class="flex items-center justify-center p-8">
-        <img src="images/quality1.svg" alt="ISRO" class="h-16 w-auto grayscale hover:grayscale-0 transition-all">
-      </div>
-      
-      <div class="flex items-center justify-center p-8">
-        <img src="images/quality2.svg" alt="JJM" class="h-16 w-auto grayscale hover:grayscale-0 transition-all">
-      </div>
-      
-      <div class="flex items-center justify-center p-8">
-        <img src="images/quality3.svg" alt="NTPC" class="h-12 w-auto grayscale hover:grayscale-0 transition-all">
-      </div>
-      
-      <div class="flex items-center justify-center p-8">
-        <img src="images/quality4.svg" alt="DAE" class="h-16 w-auto grayscale hover:grayscale-0 transition-all">
-      </div>
-      
-      <div class="flex items-center justify-center p-8">
-        <img src="images/quality5.svg" alt="GAIL" class="h-14 w-auto grayscale hover:grayscale-0 transition-all">
-      </div>
-      
-      <div class="flex items-center justify-center p-8">
-        <img src="images/quality6.svg" alt="Client Logo" class="h-16 w-auto grayscale hover:grayscale-0 transition-all">
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
- <section class="bg-[#3e4095] min-h-[40vh] flex items-center px-6 md:px-20 py-16 mb-16">
-        <div class="max-w-5xl">
-            <h1 class="text-3xl md:text-4xl lg:text-5xl font-light text-cyan-300 leading-tight">
-                Solanki Delivering Pipes for Diverse Industries, from Agriculture to Tele-communications, and Infrastructure Development, Building a Better <span class="text-white/40">Tomorrow.</span>
-            </h1>
-        </div>
-</section>
-
-<section class=" max-w-6xl flex flex-col  px-4  bg-[#F9F9F7] font-sans">
-  
-  <div class="mb-4">
-    <span class="text-blue-900 font-bold tracking-widest uppercase text-xs sm:text-sm">
-      Connecting the Dots
-    </span>
-  </div>
-
-  <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 w-full items-center lg:items-center">
-    
-    <div class="flex flex-col lg:w-5/12 w-full order-2 lg:order-1">
-      <h2 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 font-light mb-8 leading-tight">
-        Where We Are
-      </h2>
-      
-      <div class=" space-y-6">
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-          At Solanki Pipes Pipe, our commitment extends beyond product excellence. We believe in <span class="font-bold">establishing strong connections and networks</span> that resonate with trust and reliability.
-        </p>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-          Our network expansion initiative aims to establish a robust presence in <span class="font-bold">every corner of the country</span>, facilitating <span class="font-bold">seamless connectivity and efficient product distribution</span>.
-        </p>
-        
-        <a href="/location" class="group inline-flex items-center mt-4 text-blue-900 font-medium hover:underline text-lg">
-          More 
-          <span class="ml-2 h-2 w-2 bg-blue-900 rounded-full transition-transform group-hover:scale-125"></span>
-        </a>
-      </div>
-    </div>
-
-    
-
-    <div class="lg:w-7/12 w-full flex flex-col items-center lg:items-end order-1 lg:order-2">
-      <div class="relative max-w-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="w-full h-full" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd" viewBox="6900 6900 6300 7100"><defs><style>@font-face{font-family:"Montserrat";font-variant:normal;font-style:normal;font-weight:400;src:url(#FontID0)format(svg)}.fil6{fill:#373435}.fil2{fill:#00afef}.fnt0{font-weight:400;font-size:177.075px;font-family:"Montserrat"}</style><font id="FontID0" font-style="normal" font-variant="normal" font-weight="400" horiz-adv-x="717" style="fill-rule:nonzero"><fontface font-family="Montserrat"><fontfacesrc><fontfacename name="Montserrat Regular"></fontfacename></fontfacesrc></fontface><missingglyph><path d="M0 0z"></path></missingglyph><glyph d="M375.992 31.994C362.674 20.01 346.177 10.828 326.5 4.491c-19.677-6.314-40.176-9.494-61.498-9.494-49.336 0-87.334 13.34-113.992 39.999-26.68 26.68-40.02 64.344-40.02 113.013v317.985H17.007v60.008h93.981v114.992h71.014V526.002h159.993v-60.008H182.003V152.01c0-31.35 7.827-55.184 23.501-71.504 15.653-16.341 38.153-24.5 67.502-24.5 14.651 0 28.837 2.334 42.488 7.003 13.674 4.646 25.502 11.317 35.507 19.988l24.99-51.004z" horiz-adv-x="406" unicode="t"></glyph><glyph d="M367.01 530.004c65.99 0 118.483-19.165 157.48-57.496 39.02-38.33 58.519-94.182 58.519-167.508V0h-71.014v297.997c0 54.672-13.652 96.338-40.999 124.997-27.325 28.681-66.323 43-116.993 43-56.673 0-101.496-16.831-134.513-50.493-32.995-33.661-49.492-80.174-49.492-139.494V0H99.006v526.002h67.99v-97.005c19.344 31.994 46.18 56.83 80.508 74.505 34.329 17.675 74.172 26.502 119.506 26.502z" horiz-adv-x="676" unicode="n"></glyph><glyph d="M367.01 530.004c65.99 0 118.483-19.165 157.48-57.496 39.02-38.33 58.519-94.182 58.519-167.508V0h-71.014v297.997c0 54.672-13.652 96.338-40.999 124.997-27.325 28.681-66.323 43-116.993 43-56.673 0-101.496-16.831-134.513-50.493-32.995-33.661-49.492-80.174-49.492-139.494V0H99.006V742h70.992V433.998c19.343 30.66 46.001 54.34 79.996 70.992 33.996 16.675 73.016 25.013 117.015 25.013z" horiz-adv-x="676" unicode="h"></glyph><glyph d="M1074.99 700.002 839.003 0h-78.018L555.991 596.994 349.997 0h-76.995L36.992 700.002h75.995L315 98.005l208.996 601.997h68.99L799.005 95.004l204.994 604.998h70.991z" horiz-adv-x="1110" unicode="W"></glyph><glyph d="M417.991-6.003c-69.324 0-131.823 15.341-187.496 46.001-55.673 30.66-99.34 73.17-131 127.51-31.66 54.317-47.49 115.148-47.49 182.493 0 67.324 15.83 128.177 47.49 182.493 31.66 54.34 75.505 96.85 131.512 127.51 55.984 30.66 118.661 46.002 187.985 46.002 52.004 0 100.007-8.672 144.007-26.014 44-17.32 81.33-42.666 111.991-75.994l-46.98-47.002c-54.672 55.34-123.685 82.998-207.017 82.998-55.317 0-105.654-12.65-150.988-37.997-45.334-25.324-80.84-59.986-106.499-103.986-25.68-44-38.508-93.337-38.508-148.01 0-54.672 12.829-104.008 38.508-148.008 25.658-44 61.165-78.663 106.5-103.986C315.34 72.66 365.675 60.01 420.992 60.01c83.999 0 153.012 27.992 207.017 83.998l46.98-47.002c-30.66-33.328-68.146-58.83-112.48-76.505C518.176 2.825 469.996-6.002 417.992-6.002z" horiz-adv-x="718" unicode="C"></glyph><glyph d="M556.996 240.99H116.993c4.002-54.65 25.013-98.828 63.01-132.49 37.997-33.662 86-50.492 144.007-50.492 32.661 0 62.654 5.825 89.98 17.497 27.347 11.65 51.003 28.837 71.013 51.493l39.999-46.001c-23.346-27.992-52.494-49.336-87.512-63.988C402.494 2.334 364.008-5.003 322.01-5.003c-54.006 0-101.853 11.495-143.519 34.507-41.666 22.99-74.149 54.828-97.494 95.493C57.674 165.662 46 211.664 46 263.001c0 51.338 11.161 97.339 33.506 138.004 22.323 40.665 52.983 72.326 92.003 95.004 38.997 22.656 82.82 33.995 131.489 33.995 48.67 0 92.336-11.339 131-33.995 38.664-22.678 68.99-54.183 91.002-94.515 21.989-40.331 32.995-86.488 32.995-138.493l-1.001-22.011zM303 468.995c-50.67 0-93.159-16.164-127.51-48.492-34.329-32.327-53.828-74.504-58.497-126.508h373.013c-4.669 52.004-24.167 94.181-58.496 126.509-34.351 32.327-77.173 48.491-128.51 48.491z" horiz-adv-x="603" unicode="e"></glyph><glyph d="M239.989-5.003c-42.666 0-83.487 6.16-122.485 18.499-38.998 12.34-69.502 27.836-91.513 46.512l32.016 55.985c21.989-17.32 49.67-31.483 82.998-42.489 33.328-11.005 67.99-16.497 103.986-16.497 48.002 0 83.51 7.493 106.499 22.5 23.012 14.986 34.507 36.152 34.507 63.5 0 19.32-6.337 34.484-18.988 45.49-12.673 11.005-28.681 19.343-48.002 25.012-19.343 5.647-45.001 11.161-77.017 16.497-42.667 8.005-76.995 16.164-102.986 24.502-26.014 8.315-48.18 22.5-66.501 42.488C54.16 317.006 45 344.665 45 379.994c0 44 18.343 79.997 55.006 108.011 36.663 27.992 87.667 42 152.989 42 33.995 0 68.012-4.514 102.008-13.496 33.995-9.005 61.987-20.833 83.998-35.507l-30.993-57.007c-43.334 30.015-95.004 45-155.013 45-45.335 0-79.485-8.004-102.497-23.99-22.99-16.008-34.507-36.996-34.507-63.01 0-19.987 6.515-35.996 19.5-48.002 13.006-11.984 29.17-20.833 48.513-26.502 19.32-5.647 46.001-11.495 79.996-17.498 42-7.982 75.661-15.986 101.007-23.99 25.324-8.004 47.002-21.678 64.99-40.999 18.008-19.343 26.99-46.001 26.99-79.996 0-46.001-19.165-82.509-57.495-109.5C361.16 8.494 308-5.002 239.988-5.002z" horiz-adv-x="489" unicode="s"></glyph><glyph d="M699.002 700.002V0h-61.009L188.007 568.001V0h-74.016v700.002h61.01l451.007-568.001v568.001h72.993z" horiz-adv-x="812" unicode="N"></glyph><glyph d="M609 64.01V0H113.991v700.002h480.001v-64.01H188.007V386.997h361.985V324.01H188.007v-260H609z" horiz-adv-x="669" unicode="E"></glyph><glyph d="M573.004 526.002V0h-68.013v96.005c-18.653-31.994-44.333-56.83-76.994-74.505C395.336 3.824 358.005-5.003 316.006-5.003c-68.68 0-122.841 19.166-162.505 57.497-39.665 38.33-59.497 94.515-59.497 168.508v305h70.991V228.005c0-55.34 13.674-97.339 40.999-125.998 27.347-28.682 66.345-43 117.015-43 55.317 0 98.984 16.83 131 50.492 31.994 33.662 47.98 80.508 47.98 140.494v276.008h71.014z" horiz-adv-x="673" unicode="u"></glyph><glyph d="M307.001-6.003c-52.004 0-101.83 8.338-149.499 25.013-47.669 16.653-84.51 38.664-110.501 65.989l28.993 57.007C101.34 116.66 135 96.16 177 80.508 219 64.833 262.333 57.007 307 57.007c62.654 0 109.656 11.495 141.005 34.484 31.327 23.012 47.001 52.85 47.001 89.513 0 27.992-8.515 50.336-25.502 66.99-17.008 16.675-37.841 29.503-62.498 38.508-24.68 9.005-59.008 18.832-103.008 29.504-52.672 13.318-94.67 26.169-125.998 38.486-31.327 12.34-58.163 31.172-80.508 56.518-22.322 25.324-33.484 59.653-33.484 102.986 0 35.33 9.316 67.501 27.992 96.494 18.654 29.015 47.336 52.182 86 69.502 38.664 17.342 86.666 26.013 144.007 26.013 39.998 0 79.152-5.513 117.482-16.497 38.353-11.005 71.503-26.169 99.517-45.512l-25.012-58.986c-29.326 19.321-60.654 33.818-94.004 43.49-33.328 9.67-65.99 14.495-97.983 14.495-61.343 0-107.5-11.828-138.515-35.484-30.994-23.68-46.49-54.184-46.49-91.514 0-27.992 8.492-50.492 25.501-67.501 16.987-16.986 38.33-29.993 63.988-38.998 25.68-9.004 60.165-18.831 103.497-29.504 51.338-12.65 92.848-25.168 124.508-37.485 31.661-12.34 58.497-31.016 80.508-56.007C556.995 261.49 568 227.672 568 185.006c0-35.33-9.494-67.501-28.504-96.516-18.987-28.992-48.158-51.982-87.489-68.99C412.676 2.49 364.34-6.004 307-6.004z" horiz-adv-x="615" unicode="S"></glyph><glyph d="M282.989 530.004c68.68 0 121.351-17.164 158.014-51.515 36.663-34.329 55.006-85.155 55.006-152.478V0h-68.013v81.997c-15.985-27.325-39.486-48.669-70.502-63.988C326.5 2.668 289.659-5.003 246.993-5.003c-58.653 0-105.32 14.007-139.983 42-34.685 28.014-52.005 65.01-52.005 111.011 0 44.668 16.164 80.664 48.492 107.99 32.327 27.325 83.843 40.998 154.5 40.998h166.997v31.994c0 45.335-12.651 79.841-37.997 103.52-25.325 23.657-62.321 35.485-110.99 35.485-33.35 0-65.345-5.492-96.005-16.497-30.66-11.006-57.007-26.17-78.996-45.49L68.99 458.99c26.68 22.679 58.674 40.177 96.004 52.516 37.33 12.318 76.662 18.498 117.994 18.498zm-24.99-479c39.998 0 74.326 9.16 103.007 27.503 28.66 18.32 50.004 44.823 63.989 79.485v86H260c-90.002 0-135.002-31.328-135.002-93.982 0-30.682 11.672-54.85 34.995-72.504C183.34 59.831 216 51.004 258 51.004z" horiz-adv-x="589" unicode="a"></glyph><glyph d="M166.996 422.994c16.675 35.33 41.51 62.01 74.505 79.996 32.994 18.01 73.837 27.014 122.507 27.014v-69.013l-17.009 1c-55.34 0-98.673-16.986-130-50.981-31.327-34.017-47.002-81.686-47.002-143.006V0H99.005v526.002h67.99V422.994z" horiz-adv-x="401" unicode="r"></glyph><glyph d="M314.005-5.003c-50.67 0-96.338 11.495-137.003 34.507-40.665 22.99-72.66 54.828-96.005 95.493-23.323 40.665-34.995 86.667-34.995 138.004 0 51.338 11.672 97.339 34.995 138.004 23.346 40.665 55.34 72.326 96.005 95.004 40.665 22.656 86.333 33.996 137.003 33.996 50.67 0 96.338-11.34 137.003-33.996 40.665-22.678 72.481-54.339 95.493-95.004 22.99-40.665 34.507-86.666 34.507-138.004 0-51.337-11.517-97.338-34.507-138.004-23.011-40.665-54.828-72.503-95.493-95.493C410.343 6.492 364.675-5.003 314.005-5.003zm0 63.01c37.33 0 70.836 8.494 100.496 25.502 29.66 16.987 52.827 41.155 69.502 72.482 16.653 31.35 24.99 67.012 24.99 107.01 0 39.998-8.337 75.66-24.99 106.988-16.675 31.35-39.842 55.517-69.502 72.504-29.66 17.008-63.166 25.501-100.496 25.501s-70.836-8.493-100.496-25.501c-29.682-16.987-53.005-41.155-70.014-72.504-16.986-31.327-25.501-66.99-25.501-106.988 0-39.998 8.515-75.661 25.501-107.01 17.01-31.327 40.332-55.495 70.014-72.482 29.66-17.008 63.166-25.502 100.496-25.502z" horiz-adv-x="627" unicode="o"></glyph></font></defs><g id="Layer_x0020_1"><g id="_2129450493840"><path d="M8553 7032c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm148-97c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-305 175c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-453 96c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm305 0c39 0 71 32 71 71 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-71 70-71zm306 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-71 71-71zm-463 78c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm-1063 97c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 71-71 71-38 0-70-32-70-71 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm-768 78c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm-1063 97c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 71-71 71-38 0-70-32-70-71 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm-768 78c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-758 97c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-71-31-71-70 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm-463 78c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-453 97c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-71-31-71-70 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm-768 78c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-453 97c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-71-31-71-70 0-38 32-70 71-70zm-463 78c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-758 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-768 78c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-758 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-1073 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1368 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-1378 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1368 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm3356 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm-4734 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm3051 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-5334 97c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm2745 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm-5039 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm610 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm3051 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-5334 97c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm1525 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm915 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm-5039 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm2441 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-5029 97c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm2746 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm915 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm-5039 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm2746 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-5029 97c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm2136 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm-4733 78c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm2135 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm610 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-5334 97c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm1831 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm610 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm-5344 78c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm2135 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm915 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-5334 97c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm2136 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm915 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm-5344 78c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm610 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm2135 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm1220 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-5029 96c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm610 0c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm2136 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm915 0c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm305 0c39 0 71 32 71 71 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-71 70-71zm-5344 78c39 0 71 32 71 71 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-71 70-71zm306 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-71 71-71zm305 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm305 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm305 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm2440 0c39 0 71 32 71 71 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-71 70-71zm306 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-71 71-71zm305 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm610 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm-5029 97c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm2136 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm-3818 78c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm2441 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm915 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm-5029 97c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm2136 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm-3818 78c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm610 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm2440 0c39 0 71 32 71 70 0 39-32 71-71 71-38 0-70-32-70-71 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm-3504 97c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm2136 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-3208 78c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm2135 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm-2893 97c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm1831 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-2598 78c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm2135 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm-2893 97c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm1831 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-2598 78c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm1830 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm-2893 97c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm1831 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-2598 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm1830 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm-2588 97c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm-462 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1063 97c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm-767 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-453 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm-767 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-453 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm-462 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm610-4024c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-305 1225c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm3966 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-3966 875c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm-148 96c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm2588 253c39 0 71 32 71 70 0 39-32 71-71 71-38 0-70-32-70-71 0-38 32-70 70-70zm158 447c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-2903 603c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm767-4276c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm1375 2177c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm-1368 97c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm610 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1378 78c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm-1062 97c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-1378 78c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm-1368 97c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-1378 78c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm-1673 97c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-1378 78c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm-1673 96c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm305 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm-1683 78c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm305 0c39 0 71 32 71 71 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-71 70-71zm306 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-71 71-71zm305 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm-1673 97c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm305 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm-1378 78c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 71-71 71-38 0-70-32-70-71 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm-1673 97c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm-1683 78c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 71-71 71-38 0-70-32-70-71 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70zm-1673 97c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-1378 78c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm611 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm-1368 97c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-1378 78c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-71-31-71-70 0-38 32-70 71-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm-1368 97c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-1378 78c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-71-31-71-70 0-38 32-70 71-70zm-1063 97c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-463 78c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm463-1827c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm453 78c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm0 1224c38 0 70 32 70 70 0 39-32 70-70 70-39 0-71-31-71-70 0-38 32-70 71-70zm312-1196c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-161 1643c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm0 175c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1378 253c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm0 175c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-148 97c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm916-700c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm305 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-70-31-70-70 0-38 31-70 70-70zm-158 78c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm-1062 97c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-768 78c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm-1062 97c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-768 78c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm-757 97c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-463 78c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-452 97c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-463 78c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-147 97c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm147-797c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1220 700c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-758 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm-462 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1063 97c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70c-38 0-70-31-70-70s32-70 70-70zm305 0c39 0 71 31 71 70s-32 70-71 70c-38 0-70-31-70-70s32-70 70-70zm306 0c38 0 70 31 70 70s-32 70-70 70c-39 0-71-31-71-70s32-70 71-70zm305 0c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm-1073 78c38 0 70 31 70 70s-32 70-70 70c-39 0-70-31-70-70s31-70 70-70zm610 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm305 0c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-1063 97c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm-1073 78c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-1063 97c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm305 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm-1073 78c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-1063 97c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm-463 78c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm305 0c39 0 70 31 70 70 0 38-31 70-70 70s-70-32-70-70c0-39 31-70 70-70zm-758 97c39 0 70 31 70 70 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-70 70-70zm305 0c39 0 71 31 71 70 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-70 70-70zm306 0c38 0 70 31 70 70 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-70 71-70zm-768 77c38 0 70 32 70 71 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm-758 97c39 0 70 32 70 71 0 38-31 70-70 70-38 0-70-32-70-70 0-39 32-71 70-71zm305 0c39 0 71 32 71 71 0 38-32 70-71 70-38 0-70-32-70-70 0-39 32-71 70-71zm306 0c38 0 70 32 70 71 0 38-32 70-70 70-39 0-71-32-71-70 0-39 32-71 71-71zm-463 78c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm305 0c39 0 70 32 70 71 0 38-31 70-70 70s-70-32-70-70c0-39 31-71 70-71zm-453 97c39 0 70 32 70 70 0 39-31 71-70 71-38 0-70-32-70-71 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 71-71 71-38 0-70-32-70-71 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 71-70 71-39 0-71-32-71-71 0-38 32-70 71-70zm-463 78c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm305 0c39 0 70 32 70 70 0 39-31 71-70 71s-70-32-70-71c0-38 31-70 70-70zm-453 97c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm306 0c38 0 70 32 70 70 0 39-32 70-70 70-39 0-71-31-71-70 0-38 32-70 71-70zm-463 78c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-148 97c39 0 70 32 70 70 0 39-31 70-70 70-38 0-70-31-70-70 0-38 32-70 70-70zm305 0c39 0 71 32 71 70 0 39-32 70-71 70-38 0-70-31-70-70 0-38 32-70 70-70zm-157-1321c39 0 70 31 70 70s-31 70-70 70-70-31-70-70 31-70 70-70zm-305 525c38 0 70 31 70 70 0 38-32 70-70 70-39 0-70-32-70-70 0-39 31-70 70-70zm610 699c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-305 175c39 0 70 32 70 70 0 39-31 70-70 70s-70-31-70-70c0-38 31-70 70-70zm-305-428c38 0 70 32 70 70 0 39-32 71-70 71-39 0-70-32-70-71 0-38 31-70 70-70z" style="fill:#ccc"></path><circle cx="11691" cy="13807" r="91" style="fill:#0bb7c4"></circle><circle cx="11691" cy="12443" r="91" class="fil2"></circle><circle cx="11691" cy="13125" r="91" style="fill:#90e0ef"></circle><circle cx="11691" cy="13466" r="91" style="fill:#3e4095"></circle><circle cx="11691" cy="12783" r="91" style="fill:#2a569f"></circle><text x="11988" y="12504" class="fil6 fnt0">West</text><text x="11974" y="12849" class="fil6 fnt0">North</text><text x="11985" y="13187" class="fil6 fnt0">Center</text><text x="11986" y="13532" class="fil6 fnt0">South</text><text x="11974" y="13869" class="fil6 fnt0">East</text><circle cx="12057" cy="9629" r="71" class="fil2"></circle><circle cx="7481" cy="10154" r="71" class="fil2"></circle><circle cx="8250" cy="12700" r="71" class="fil2"></circle></g></g></svg>
-        
-        <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 self-end text-sm text-gray-600 lg:mr-10">
-           <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-cyan-400"></span> West</div>
-           <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-blue-900"></span> North</div>
-           <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-blue-300"></span> Center</div>
-           <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-indigo-600"></span> South</div>
-           <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-teal-500"></span> East</div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-</div>
-
-<%- include('partials/footer') %>
-    <script>
+    <%- include('partials/footer') %>
+      <script>
         let currentIndex = 0;
         const carousel = document.getElementById('carousel');
         const dots = document.querySelectorAll('.dot');
         const totalSlides = 2;
 
         function updateCarousel() {
-            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-            dots.forEach((dot, i) => {
-                if (i < totalSlides) {
-                    dot.classList.toggle('bg-[#1E3A8A]', i === currentIndex);
-                    dot.classList.toggle('bg-gray-300', i !== currentIndex);
-                }
-            });
+          carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+          dots.forEach((dot, i) => {
+            if (i < totalSlides) {
+              dot.classList.toggle('bg-[#1E3A8A]', i === currentIndex);
+              dot.classList.toggle('bg-gray-300', i !== currentIndex);
+            }
+          });
         }
 
         function moveSlide(direction) {
-            currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
-            updateCarousel();
+          currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+          updateCarousel();
         }
 
         function goToSlide(index) {
-            currentIndex = index;
-            updateCarousel();
+          currentIndex = index;
+          updateCarousel();
         }
-    </script>
+      </script>
