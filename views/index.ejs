@@ -1,57 +1,84 @@
 <%- include('partials/header') %>
-  <div class="relative w-full h-[85vh] overflow-hidden">
-
-    <button onclick="moveSlide(-1)"
-      class="absolute left-6 top-1/2 -translate-y-1/2 z-40 w-11 h-11 bg-gray-200/80 hover:bg-gray-300 rounded-full flex items-center justify-center text-gray-600 transition">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-        class="w-5 h-5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-      </svg>
-    </button>
-    <button onclick="moveSlide(1)"
-      class="absolute right-6 top-1/2 -translate-y-1/2 z-40 w-11 h-11 bg-gray-200/80 hover:bg-gray-300 rounded-full flex items-center justify-center text-gray-600 transition">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-        class="w-5 h-5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-      </svg>
-    </button>
-
-    <div id="carousel" class="carousel-container flex h-full">
-      <div class="min-w-full h-full flex flex-col items-center justify-center relative bg-no-repeat bg-center"
-        style="background-image: url('/images/slider_03.png'); background-size: 200px;">
-
-        <h2 class="relative z-10 hero-text 
-           text-2xl md:text-[50px] 
-           leading-tight md:leading-[1.1] 
-           font-medium text-center 
-           max-w-6xl px-4 select-none" style="font-family: sans-serif;">
-          Trusted HDPE Piping Partner for North India's Water
-          Infrastructure.
-        </h2>
-      </div>
-
-      <div class="min-w-full h-full flex items-center justify-center relative bg-no-repeat bg-center"
-        style="background-image: url('/images/slider_03.png'); background-size: 200px; filter: saturate(1.5);">
-        <h2 class="relative z-10 hero-text 
-           text-xl md:text-[50px] 
-           leading-tight md:leading-[1.1] 
-           font-medium text-center 
-           max-w-6xl px-4 select-none" style="font-family: sans-serif;">
-          20+ Years of
-          Manufacturing Excellence. Sub-line:
-          PE 80 & PE 100 grades, PN 2.5 to PN
-          10.
-
-        </h2>
-      </div>
+  <!-- Hero Section -->
+  <section
+    class="relative w-full min-h-[85vh] flex items-center bg-gradient-to-br from-[#f8fafc] via-white to-[#eff6ff] overflow-hidden">
+    <!-- Decorative elements -->
+    <div
+      class="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] rounded-full bg-cyan-100/40 blur-3xl pointer-events-none">
+    </div>
+    <div
+      class="absolute bottom-0 left-0 -ml-20 -mb-20 w-[500px] h-[500px] rounded-full bg-blue-100/40 blur-3xl pointer-events-none">
     </div>
 
-    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex space-x-3 z-40">
-      <button onclick="goToSlide(0)" class="dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all"></button>
-      <button onclick="goToSlide(1)" class="dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all"></button>
+    <div
+      class="max-w-7xl mx-auto w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 py-16 lg:py-0">
+
+      <!-- Left Content -->
+      <div id="hero-text-container" data-aos="fade-right" data-aos-duration="1000"
+        class="flex flex-col space-y-6 md:space-y-8 z-20 transition-opacity duration-300 opacity-100">
+        <div>
+          <span id="hero-badge"
+            class="inline-block py-1 px-3 rounded-full bg-blue-50 text-blue-600 font-bold tracking-widest uppercase text-xs mb-4">
+            Welcome to Solanki Pipes
+          </span>
+          <h1 id="hero-title" class="text-xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 leading-[1.15]">
+            Trusted Piping Partner for North India's <br class="hidden lg:block" />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-cyan-500">Water
+              Infrastructure</span>
+          </h1>
+        </div>
+        <p id="hero-description" class="text-lg md:text-xl text-gray-600 max-w-lg leading-relaxed min-h-[80px]">
+          20+ Years of Manufacturing Excellence. Supplying high-quality PE 80 & PE 100 grades, PN 2.5 to PN 10 for a
+          robust tomorrow.
+        </p>
+
+        <div class="flex flex-row gap-2 sm:gap-4 pt-2 w-full">
+          <a href="/hdpe"
+            class="flex-1 sm:flex-none flex items-center justify-center px-2 sm:px-8 py-3 sm:py-3.5 bg-gradient-to-r from-blue-700 to-cyan-600 text-white text-xs sm:text-base font-medium rounded-full hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 transform hover:-translate-y-0.5 whitespace-nowrap">
+            Explore Products
+          </a>
+          <a href="/contact"
+            class="flex-1 sm:flex-none flex items-center justify-center px-2 sm:px-8 py-3 sm:py-3.5 border-2 border-gray-200 text-gray-700 text-xs sm:text-base font-medium rounded-full hover:border-blue-600 hover:text-blue-700 hover:bg-blue-50 transition-all duration-300 whitespace-nowrap">
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Image (Auto-changing) -->
+      <div class="relative flex items-center justify-center h-[350px] sm:h-[450px] lg:h-[550px] w-full"
+        data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <!-- Glow behind image -->
+        <div
+          class="absolute inset-0 bg-gradient-to-tr from-blue-200 to-cyan-200 rounded-full blur-3xl opacity-30 animate-pulse duration-1000">
+        </div>
+
+        <!-- Images -->
+        <div class="relative w-full h-full flex items-center justify-center">
+          <img id="hero-img-0" src="/images/product_01hover-removebg-preview.png"
+            class="absolute max-h-[90%] max-w-[90%] object-contain transition-all duration-700 ease-in-out opacity-100 scale-100 z-10 drop-shadow-2xl"
+            alt="Product 1">
+          <img id="hero-img-1" src="/images/product_03-removebg-preview.png"
+            class="absolute max-h-[90%] max-w-[90%] object-contain transition-all duration-700 ease-in-out opacity-0 scale-95 z-0 pointer-events-none drop-shadow-2xl"
+            alt="Product 2">
+          <img id="hero-img-2" src="/images/product_04.png"
+            class="absolute max-h-[90%] max-w-[90%] object-contain transition-all duration-700 ease-in-out opacity-0 scale-95 z-0 pointer-events-none drop-shadow-2xl"
+            alt="Product 3">
+        </div>
+
+        <!-- Image indicators -->
+        <div
+          class="absolute -bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20 bg-white/50 backdrop-blur-sm py-2 px-4 rounded-full border border-white/60 shadow-sm">
+          <button onclick="setHeroImage(0)" id="hero-dot-0"
+            class="w-8 h-2.5 rounded-full bg-blue-600 transition-all duration-300 hover:bg-blue-700 focus:outline-none"></button>
+          <button onclick="setHeroImage(1)" id="hero-dot-1"
+            class="w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300 hover:bg-gray-400 focus:outline-none"></button>
+          <button onclick="setHeroImage(2)" id="hero-dot-2"
+            class="w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300 hover:bg-gray-400 focus:outline-none"></button>
+        </div>
+      </div>
 
     </div>
-  </div>
+  </section>
 
 
 
@@ -60,14 +87,14 @@
       EXPLORE OUR PRODUCT RANGE
     </div>
 
-    <h2 class="text-2xl md:text-3xl lg:text-5xl mb-20 mt-10 text-jacksonsPurple">
+    <h2 class="text-2xl md:text-3xl lg:text-5xl mb-20 mt-10 text-jacksonsPurple" data-aos="fade-up">
       What We Produce
     </h2>
 
     <div class="w-full px-6 md:px-10 relative flex justify-center">
       <div class="flex lg:justify-center overflow-x-auto gap-6 pb-8 snap-x scrollbar-hide scroll-smooth w-full">
 
-        <div class="flex-none w-64 md:w-72 snap-center group">
+        <div class="flex-none w-64 md:w-72 snap-center group" data-aos="zoom-in" data-aos-delay="100">
           <div
             class="flex flex-col items-center border border-jacksonsPurple p-6 rounded-3xl transition-all hover:bg-jacksonsPurple  relative">
             <h4 class="text-lg md:text-xl font-semibold mb-4 text-center">HDPE PIPES</h4>
@@ -81,7 +108,7 @@
           </div>
         </div>
 
-        <div class="flex-none w-64 md:w-72 snap-center group">
+        <div class="flex-none w-64 md:w-72 snap-center group" data-aos="zoom-in" data-aos-delay="200">
           <div
             class="flex flex-col items-center border border-jacksonsPurple p-6 rounded-3xl transition-all hover:bg-jacksonsPurple relative">
             <h4 class="text-lg md:text-xl font-semibold mb-4 text-center"> DWC PIPE</h4>
@@ -95,7 +122,7 @@
           </div>
         </div>
 
-        <div class="flex-none w-64 md:w-72 snap-center group">
+        <div class="flex-none w-64 md:w-72 snap-center group" data-aos="zoom-in" data-aos-delay="300">
           <div
             class="flex flex-col items-center border border-jacksonsPurple p-6 rounded-3xl transition-all hover:bg-jacksonsPurple relative">
             <h4 class="text-lg md:text-xl font-semibold mb-4 text-center">PVC PIPE</h4>
@@ -115,7 +142,7 @@
 
     <div class="font-sans overflow-x-hidden">
       <div class="flex flex-col items-center justify-center mt-10 px-4 sm:px-10 lg:px-20">
-        <div class="text-center mb-10">
+        <div class="text-center mb-10" data-aos="fade-up">
           <span class="text-blue-900 font-bold tracking-widest uppercase">OUR IMPACT</span>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl mt-4">Projects & Events</h2>
         </div>
@@ -123,7 +150,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full max-w-7xl mb-24">
 
           <!-- LEFT BIG CARD -->
-          <div class="lg:col-span-2 relative group overflow-hidden rounded-2xl min-h-[500px]">
+          <div class="lg:col-span-2 relative group overflow-hidden rounded-2xl min-h-[500px]" data-aos="fade-right">
 
             <a href="/projects" class="block h-full">
               <img src="/images/project_1.jpg"
@@ -150,7 +177,7 @@
           <div class="flex flex-col gap-6">
 
             <!-- TOP CARD -->
-            <a href="/farmers-fair" class="flex flex-col group">
+            <a href="/farmers-fair" class="flex flex-col group" data-aos="fade-left" data-aos-delay="100">
               <div class="overflow-hidden rounded-xl h-60 relative">
                 <img src="/images/IMG_0524.jpg.jpeg"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -169,7 +196,7 @@
             </a>
 
             <!-- BOTTOM CARD -->
-            <div class="flex flex-col">
+            <div class="flex flex-col" data-aos="fade-left" data-aos-delay="200">
               <div class="overflow-hidden rounded-xl h-60">
                 <img src="/images/kabadi.jpeg" class="w-full h-full object-cover">
               </div>
@@ -191,7 +218,7 @@
 
       <!-- DHBVN EMPANELMENT ANNOUNCEMENT SECTION -->
       <section id="dhbvn-announcement"
-        class="bg-gradient-to-br from-[#F9F9F7] via-white to-[#F0F4F8] py-20 px-6 md:px-20 border-y border-gray-100 overflow-hidden relative mb-16">
+        class="bg-gradient-to-br from-[#F9F9F7] via-white to-[#F0F4F8] py-10 px-6 md:px-20 border-y border-gray-100 overflow-hidden relative mb-16">
         <!-- Subtle decorative background elements -->
         <div
           class="absolute -right-40 -bottom-40 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-60 pointer-events-none">
@@ -204,7 +231,8 @@
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
             <!-- LEFT COLUMN: Visually stunning certificate frame + zoom -->
-            <div class="lg:col-span-5 flex flex-col items-center justify-center lg:sticky lg:top-8 z-20">
+            <div class="lg:col-span-5 flex flex-col items-center justify-center lg:sticky lg:top-8 z-20"
+              data-aos="zoom-in-right">
               <div class="w-full relative group">
 
 
@@ -219,7 +247,7 @@
             </div>
 
             <!-- RIGHT COLUMN: Text & dynamic accordions -->
-            <div class="lg:col-span-7 space-y-8 z-10">
+            <div class="lg:col-span-7 space-y-8 z-10" data-aos="fade-up">
 
               <div class="space-y-4">
 
@@ -587,14 +615,69 @@
       </script>
 
 
-      <section class="bg-[#3e4095] min-h-[40vh] flex items-center px-6 md:px-20 py-16 mb-16">
+      <section id="typing-section" class="bg-[#3e4095] min-h-[40vh] flex items-center px-6 md:px-20 py-16 mb-16">
         <div class="max-w-5xl">
-          <h1 class="text-3xl md:text-4xl lg:text-5xl  text-cyan-300 leading-tight">
-            Solanki Delivering Pipes for Diverse Industries, from Agriculture to Tele-communications, and Infrastructure
-            Development, Building a Better <span class="text-white/40">Tomorrow.</span>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl text-cyan-300 leading-tight min-h-[120px] sm:min-h-[150px]">
+            <span id="typing-text"></span><span id="typing-span" class="text-white/40"></span><span id="typing-cursor"
+              class="inline-block w-[3px] h-[30px] md:h-[40px] lg:h-[48px] bg-cyan-300 ml-1 mb-[-4px] md:mb-[-6px] animate-pulse"></span>
           </h1>
         </div>
       </section>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const textElement = document.getElementById('typing-text');
+          const spanElement = document.getElementById('typing-span');
+          const cursorElement = document.getElementById('typing-cursor');
+          const section = document.getElementById('typing-section');
+
+          const textPart1 = "Solanki Delivering Pipes for Diverse Industries, from Agriculture to Tele-communications, and Infrastructure Development, Building a Better ";
+          const textPart2 = "Tomorrow.";
+
+          let i = 0;
+          let isTypingPart2 = false;
+          let typingInterval;
+
+          const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+              textElement.textContent = "";
+              spanElement.textContent = "";
+              i = 0;
+              isTypingPart2 = false;
+
+              typingInterval = setInterval(() => {
+                if (!isTypingPart2) {
+                  if (i < textPart1.length) {
+                    textElement.textContent += textPart1.charAt(i);
+                    i++;
+                  } else {
+                    isTypingPart2 = true;
+                    i = 0;
+                  }
+                } else {
+                  if (i < textPart2.length) {
+                    spanElement.textContent += textPart2.charAt(i);
+                    i++;
+                  } else {
+                    clearInterval(typingInterval);
+                    setTimeout(() => {
+                      cursorElement.classList.remove('animate-pulse');
+                      cursorElement.style.opacity = '0';
+                      cursorElement.style.transition = 'opacity 0.5s ease';
+                    }, 2500); // Fade out cursor after 2.5 seconds
+                  }
+                }
+              }, 40); // Typing speed in ms
+
+              observer.unobserve(section); // Only animate once
+            }
+          }, { threshold: 0.3 }); // Trigger when 30% of the section is visible
+
+          if (section) {
+            observer.observe(section);
+          }
+        });
+      </script>
 
       <section class="relative overflow-hidden bg-[#f7f7f5] py-20 px-6 md:px-20">
 
@@ -609,7 +692,7 @@
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
 
           <!-- Left Content -->
-          <div>
+          <div data-aos="fade-right">
             <h2 class="text-4xl md:text-6xl font-bold leading-tight text-[#0a1b3d]">
               Strong Pipes
               For a Stronger Future
@@ -719,20 +802,21 @@
             </div>
 
             <!-- CTA Buttons -->
-            <div class="flex flex-wrap gap-5 mt-10">
+            <div class="flex flex-row gap-2 sm:gap-5 mt-10 w-full">
               <a href="#contact"
-                class="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-md font-semibold">
+                class="flex-1 sm:flex-none flex items-center justify-center px-2 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-[11px] sm:text-base rounded-md font-semibold whitespace-nowrap">
                 Request Quote
               </a>
 
-              <a href="#catalogue" class="px-8 py-4 border-2 border-blue-600 text-blue-700 rounded-md font-semibold">
+              <a href="/images/Catalog Solanki Pipes.pdf" download="Catalog Solanki Pipes.pdf"
+                class="flex-1 sm:flex-none flex items-center justify-center px-2 sm:px-8 py-3 sm:py-4 border-2 border-blue-600 text-blue-700 text-[11px] sm:text-base rounded-md font-semibold whitespace-nowrap">
                 Download Catalogue
               </a>
             </div>
           </div>
 
           <!-- Right Side Pipe Image -->
-          <div class="relative flex justify-center">
+          <div class="relative flex justify-center" data-aos="fade-left" data-aos-delay="200">
             <img src="/images/product_04hover.png" alt="" srcset="">
 
 
@@ -749,28 +833,85 @@
 
     <%- include('partials/footer') %>
       <script>
-        let currentIndex = 0;
-        const carousel = document.getElementById('carousel');
-        const dots = document.querySelectorAll('.dot');
-        const totalSlides = 2;
+        let currentHeroImage = 0;
+        const totalHeroImages = 3;
+        let heroInterval;
 
-        function updateCarousel() {
-          carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-          dots.forEach((dot, i) => {
-            if (i < totalSlides) {
-              dot.classList.toggle('bg-[#1E3A8A]', i === currentIndex);
-              dot.classList.toggle('bg-gray-300', i !== currentIndex);
+        const heroData = [
+          {
+            badge: "Welcome to Solanki Pipes",
+            title: "Trusted Piping Partner for North India's <br class=\"hidden lg:block\" />\n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-cyan-500\">Water Infrastructure</span>",
+            description: "20+ Years of Manufacturing Excellence. Supplying high-quality PE 80 & PE 100 grades, PN 2.5 to PN 10 for a robust tomorrow."
+          },
+          {
+            badge: "Unmatched Quality",
+            title: "Advanced DWC Pipes for Reliable <br class=\"hidden lg:block\" />\n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-cyan-500\">Underground Drainage</span>",
+            description: "Engineered for superior load-bearing capacity and long life. The perfect solution for city sewage and industrial effluent disposal."
+          },
+          {
+            badge: "Innovation & Durability",
+            title: "High-Performance PVC Pipes for <br class=\"hidden lg:block\" />\n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-cyan-500\">Every Application</span>",
+            description: "From plumbing to agriculture, our PVC pipes offer unmatched strength, leak resistance, and eco-friendly performance."
+          }
+        ];
+
+        function updateHeroImage() {
+          const textContainer = document.getElementById('hero-text-container');
+          if (textContainer) {
+            textContainer.classList.remove('opacity-100');
+            textContainer.classList.add('opacity-0');
+
+            setTimeout(() => {
+              const badgeEl = document.getElementById('hero-badge');
+              const titleEl = document.getElementById('hero-title');
+              const descEl = document.getElementById('hero-description');
+
+              if (badgeEl) badgeEl.innerHTML = heroData[currentHeroImage].badge;
+              if (titleEl) titleEl.innerHTML = heroData[currentHeroImage].title;
+              if (descEl) descEl.innerHTML = heroData[currentHeroImage].description;
+
+              textContainer.classList.remove('opacity-0');
+              textContainer.classList.add('opacity-100');
+            }, 300);
+          }
+
+          for (let i = 0; i < totalHeroImages; i++) {
+            const img = document.getElementById(`hero-img-${i}`);
+            const dot = document.getElementById(`hero-dot-${i}`);
+            if (!img || !dot) continue;
+
+            if (i === currentHeroImage) {
+              img.classList.remove('opacity-0', 'scale-95', 'z-0', 'pointer-events-none');
+              img.classList.add('opacity-100', 'scale-100', 'z-10');
+              dot.classList.remove('bg-gray-300', 'w-2.5');
+              dot.classList.add('bg-blue-600', 'w-8');
+            } else {
+              img.classList.remove('opacity-100', 'scale-100', 'z-10');
+              img.classList.add('opacity-0', 'scale-95', 'z-0', 'pointer-events-none');
+              dot.classList.remove('bg-blue-600', 'w-8');
+              dot.classList.add('bg-gray-300', 'w-2.5');
             }
-          });
+          }
         }
 
-        function moveSlide(direction) {
-          currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
-          updateCarousel();
+        function nextHeroImage() {
+          currentHeroImage = (currentHeroImage + 1) % totalHeroImages;
+          updateHeroImage();
         }
 
-        function goToSlide(index) {
-          currentIndex = index;
-          updateCarousel();
+        function setHeroImage(index) {
+          currentHeroImage = index;
+          updateHeroImage();
+          resetHeroInterval();
         }
+
+        function resetHeroInterval() {
+          clearInterval(heroInterval);
+          heroInterval = setInterval(nextHeroImage, 3500); // Change image every 3.5 seconds
+        }
+
+        // Start interval on load
+        window.addEventListener('DOMContentLoaded', () => {
+          resetHeroInterval();
+        });
       </script>
