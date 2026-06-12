@@ -342,10 +342,9 @@ app.get('/contact', (req, res) => {
     res.render('contact', { title: 'Contact Solanki Industries' });
 });
 
-// New Pages
-app.get('/downloads', (req, res) => {
-    res.render('downloads', { title: 'Downloads — Solanki Industries' });
-});
+// app.get('/downloads', (req, res) => {
+//     res.render('downloads', { title: 'Downloads — Solanki Industries' });
+// });
 
 app.get('/vendor-empanelment', (req, res) => {
     res.render('vendor-empanelment', { title: 'Vendor Empanelment — Solanki Industries' });
